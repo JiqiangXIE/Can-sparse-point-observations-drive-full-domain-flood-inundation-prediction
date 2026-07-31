@@ -65,8 +65,6 @@ layout is declared per site in `configs/*.yaml`.
 | Carlisle  | 305 × 475 | 10 m       | 5 min     | 9      | LISFLOOD-FP        |
 | Bundaberg | 225 × 400 | 20 m       | 1 h       | 21     | TUFLOW             |
 
-LISFLOOD-FP: <https://www.lisflood.co.uk>. The Bundaberg TUFLOW events are from
-Fraehr et al. (2024). Processed datasets.
 
 
 
