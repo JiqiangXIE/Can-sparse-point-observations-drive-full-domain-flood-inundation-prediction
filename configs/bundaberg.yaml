@@ -1,0 +1,22 @@
+site: bundaberg
+grid: [225, 400]
+dx: 20.0
+dt: 3600.0
+hydrodynamic_model: TUFLOW
+
+crs: EPSG:28356
+origin: [430000.0, 7252500.0]
+road_halfwidth: 15
+
+raw_dir:       bundaberg/h5
+dist_to_river: bundaberg/dist_to_river.npy
+folds:         data/folds/bundaberg_folds.json
+osm:           bundaberg/osm
+landuse:
+river_mask:    bundaberg/river_mask.npy
+
+channels:
+  terrain:   [0, 1, 2, 3]
+  elevation: 0
+  inflow:    4
+  depth:     5

@@ -1,0 +1,3 @@
+data_root: /path/to/flood_data
+output_root: outputs
+device: cuda

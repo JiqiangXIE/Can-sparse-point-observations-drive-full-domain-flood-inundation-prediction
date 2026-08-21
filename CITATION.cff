@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper."
+title: "Observation-driven full-domain flood inundation prediction (AS-FloodFill + FNO-LSTM)"
+authors:
+  - family-names: Xie
+    given-names: Jiqiang
+  - family-names: Zhang
+    given-names: Yuhang
+  - family-names: Lyu
+    given-names: Heng
+  - family-names: Wang
+    given-names: Quan J.
+  - family-names: Fu
+    given-names: Shengnan
+  - family-names: Zhang
+    given-names: Chi
+license: MIT
+repository-code: "https://github.com/JiqiangXIE/Can-sparse-point-observations-drive-full-domain-flood-inundation-prediction"
+version: "1.0.0"
+date-released: 2026-08-21
+preferred-citation:
+  type: article
+  title: "Unlocking full-domain flood inundation prediction from sparse point supervision in deep-learning models"
+  authors:
+    - family-names: Xie
+      given-names: Jiqiang
+    - family-names: Zhang
+      given-names: Yuhang
+    - family-names: Lyu
+      given-names: Heng
+    - family-names: Wang
+      given-names: Quan J.
+    - family-names: Fu
+      given-names: Shengnan
+    - family-names: Zhang
+      given-names: Chi
+  journal: "Water Research"
+  year: 2026
+  start: 126760
+  doi: 10.1016/j.watres.2026.126760

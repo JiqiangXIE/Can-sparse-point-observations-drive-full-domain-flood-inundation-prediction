@@ -1,0 +1,24 @@
+site: carlisle
+grid: [305, 475]
+dx: 10.0
+dt: 300.0
+hydrodynamic_model: LISFLOOD-FP
+
+crs: EPSG:27700
+origin: [338450.0, 557805.0]
+road_halfwidth: 8
+
+raw_dir:       carlisle/h5
+dist_to_river: carlisle/dist_to_river.npy
+folds:         data/folds/carlisle_folds.json
+osm:           carlisle/osm
+landuse:       carlisle/landuse/landuse_carlisle.shp
+river_mask:
+
+channels:
+  terrain:   [0, 1, 2, 3]
+  elevation: 0
+  inflow:    11
+  depth:     7
+  inlets:    6
+  q_pathway: 5

@@ -1,0 +1,20 @@
+name: flood-sparse
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch>=2.1
+  - pytorch-cuda=12.1
+  - numpy>=1.26
+  - scipy>=1.11
+  - numba>=0.59
+  - h5py>=3.10
+  - pyyaml
+  - joblib
+  - scikit-learn
+  - geopandas
+  - rasterio
+  - shapely
+  - matplotlib
