@@ -1,0 +1,281 @@
+{
+  "site": "bundaberg",
+  "created": "2026-07-14T14:18:12",
+  "n_events": 21,
+  "all_events": [
+    "e1971_his",
+    "e1971_real_slmax_1in10",
+    "e1971_real_slmax_1in100",
+    "e1971_real_slmax_1in2",
+    "e1971_real_slmax_1in20",
+    "e1971_real_slmax_1in200",
+    "e1971_real_slmin_1in100",
+    "e2010_his",
+    "e2010_real_slmax_1in10",
+    "e2010_real_slmax_1in100",
+    "e2010_real_slmax_1in20",
+    "e2010_real_slmax_1in200",
+    "e2010_real_slmax_1in5",
+    "e2010_real_slmin_1in50",
+    "e2013_his",
+    "e2013_real_slmax_1in10",
+    "e2013_real_slmax_1in100",
+    "e2013_real_slmax_1in50",
+    "e2013_real_slmin_1in100",
+    "edesign_real_slmax_1in10",
+    "edesign_real_slmax_1in100"
+  ],
+  "cross_validation": {
+    "scheme": "5-fold, stratified by peak discharge",
+    "n_folds": 5,
+    "rationale": "5-fold cross-validation. Events are ranked by peak discharge and assigned to folds in a serpentine pattern, so that every fold spans the full range of flood magnitudes. All 21 events are tested exactly once.",
+    "folds": [
+      {
+        "fold": 1,
+        "test": [
+          "e1971_real_slmax_1in200",
+          "e2010_real_slmax_1in10",
+          "e2010_real_slmax_1in100",
+          "e2013_real_slmax_1in50",
+          "edesign_real_slmax_1in10"
+        ],
+        "train": [
+          "e1971_his",
+          "e1971_real_slmax_1in10",
+          "e1971_real_slmax_1in100",
+          "e1971_real_slmax_1in2",
+          "e1971_real_slmax_1in20",
+          "e1971_real_slmin_1in100",
+          "e2010_his",
+          "e2010_real_slmax_1in20",
+          "e2010_real_slmax_1in200",
+          "e2010_real_slmax_1in5",
+          "e2010_real_slmin_1in50",
+          "e2013_his",
+          "e2013_real_slmax_1in10",
+          "e2013_real_slmax_1in100",
+          "e2013_real_slmin_1in100",
+          "edesign_real_slmax_1in100"
+        ],
+        "test_q_peak_range": [
+          239.78111267089844,
+          19837.99609375
+        ]
+      },
+      {
+        "fold": 2,
+        "test": [
+          "e1971_real_slmax_1in10",
+          "e2010_real_slmax_1in200",
+          "e2010_real_slmin_1in50",
+          "edesign_real_slmax_1in100"
+        ],
+        "train": [
+          "e1971_his",
+          "e1971_real_slmax_1in100",
+          "e1971_real_slmax_1in2",
+          "e1971_real_slmax_1in20",
+          "e1971_real_slmax_1in200",
+          "e1971_real_slmin_1in100",
+          "e2010_his",
+          "e2010_real_slmax_1in10",
+          "e2010_real_slmax_1in100",
+          "e2010_real_slmax_1in20",
+          "e2010_real_slmax_1in5",
+          "e2013_his",
+          "e2013_real_slmax_1in10",
+          "e2013_real_slmax_1in100",
+          "e2013_real_slmax_1in50",
+          "e2013_real_slmin_1in100",
+          "edesign_real_slmax_1in10"
+        ],
+        "test_q_peak_range": [
+          499.9606018066406,
+          15440.9833984375
+        ]
+      },
+      {
+        "fold": 3,
+        "test": [
+          "e1971_his",
+          "e1971_real_slmax_1in100",
+          "e1971_real_slmax_1in2",
+          "e2010_real_slmax_1in20"
+        ],
+        "train": [
+          "e1971_real_slmax_1in10",
+          "e1971_real_slmax_1in20",
+          "e1971_real_slmax_1in200",
+          "e1971_real_slmin_1in100",
+          "e2010_his",
+          "e2010_real_slmax_1in10",
+          "e2010_real_slmax_1in100",
+          "e2010_real_slmax_1in200",
+          "e2010_real_slmax_1in5",
+          "e2010_real_slmin_1in50",
+          "e2013_his",
+          "e2013_real_slmax_1in10",
+          "e2013_real_slmax_1in100",
+          "e2013_real_slmax_1in50",
+          "e2013_real_slmin_1in100",
+          "edesign_real_slmax_1in10",
+          "edesign_real_slmax_1in100"
+        ],
+        "test_q_peak_range": [
+          3246.822998046875,
+          16653.791015625
+        ]
+      },
+      {
+        "fold": 4,
+        "test": [
+          "e1971_real_slmin_1in100",
+          "e2010_his",
+          "e2010_real_slmax_1in5",
+          "e2013_real_slmax_1in100"
+        ],
+        "train": [
+          "e1971_his",
+          "e1971_real_slmax_1in10",
+          "e1971_real_slmax_1in100",
+          "e1971_real_slmax_1in2",
+          "e1971_real_slmax_1in20",
+          "e1971_real_slmax_1in200",
+          "e2010_real_slmax_1in10",
+          "e2010_real_slmax_1in100",
+          "e2010_real_slmax_1in20",
+          "e2010_real_slmax_1in200",
+          "e2010_real_slmin_1in50",
+          "e2013_his",
+          "e2013_real_slmax_1in10",
+          "e2013_real_slmax_1in50",
+          "e2013_real_slmin_1in100",
+          "edesign_real_slmax_1in10",
+          "edesign_real_slmax_1in100"
+        ],
+        "test_q_peak_range": [
+          4563.85302734375,
+          16653.791015625
+        ]
+      },
+      {
+        "fold": 5,
+        "test": [
+          "e1971_real_slmax_1in20",
+          "e2013_his",
+          "e2013_real_slmax_1in10",
+          "e2013_real_slmin_1in100"
+        ],
+        "train": [
+          "e1971_his",
+          "e1971_real_slmax_1in10",
+          "e1971_real_slmax_1in100",
+          "e1971_real_slmax_1in2",
+          "e1971_real_slmax_1in200",
+          "e1971_real_slmin_1in100",
+          "e2010_his",
+          "e2010_real_slmax_1in10",
+          "e2010_real_slmax_1in100",
+          "e2010_real_slmax_1in20",
+          "e2010_real_slmax_1in200",
+          "e2010_real_slmax_1in5",
+          "e2010_real_slmin_1in50",
+          "e2013_real_slmax_1in100",
+          "e2013_real_slmax_1in50",
+          "edesign_real_slmax_1in10",
+          "edesign_real_slmax_1in100"
+        ],
+        "test_q_peak_range": [
+          6205.4501953125,
+          17209.0234375
+        ]
+      }
+    ],
+    "usage": "Table 1 — event-level robustness of FULL / Pre-Exp / Post-Exp (addresses reviewer R1-2). Terrain-stratified placement, N = 50.",
+    "placement_note": "Only Terrain-stratified (N=50) is used in cross-validation. Terrain depends solely on the DEM and the river centreline, so the same mask applies to every fold - no leakage. FloodNet MUST NOT be used in CV: its inundation-frequency map is derived from the FIXED training split, so a fold's test event would already have informed the placement.",
+    "normalisation_note": "🔴 Feature scaling MUST be recomputed inside each fold, from that fold's training events only. Bundaberg must be loaded from h5_data/ (raw, physical units): h5_normalized/ was clipped to [0,1] against the FIXED training split and cannot be inverted for other folds.",
+    "caveat": "The 21 Bundaberg events comprise scaled variants (different return periods) of four historical hydrographs (1971, 2010, 2013 and a design event). Cross-validation folds are stratified by peak discharge so that each fold spans the full magnitude range. Consequently the folds test generalisation across FLOOD MAGNITUDE rather than across HYDROGRAPH SHAPE. This is a property of the underlying dataset (Fraehr et al., 2024) and applies equally to the fixed train/test split used elsewhere in this study: the shape of the e2010_his test hydrograph is already present in the training set through its scaled variants. The cross-validation therefore does not introduce any dependence beyond that already inherent in the original experimental design."
+  },
+  "fixed_split": {
+    "train": [
+      "e1971_real_slmax_1in10",
+      "e1971_real_slmax_1in100",
+      "e1971_real_slmax_1in2",
+      "e1971_real_slmax_1in20",
+      "e1971_real_slmax_1in200",
+      "e1971_real_slmin_1in100",
+      "e2010_real_slmax_1in10",
+      "e2010_real_slmax_1in100",
+      "e2010_real_slmax_1in20",
+      "e2010_real_slmax_1in200",
+      "e2010_real_slmax_1in5",
+      "e2010_real_slmin_1in50",
+      "e2013_his",
+      "e2013_real_slmax_1in10",
+      "e2013_real_slmax_1in100",
+      "e2013_real_slmax_1in50",
+      "e2013_real_slmin_1in100",
+      "edesign_real_slmax_1in10",
+      "edesign_real_slmax_1in100"
+    ],
+    "test": [
+      "e1971_his",
+      "e2010_his"
+    ],
+    "usage": "Fig. 7 (density x placement), robustness experiments, and the mechanism figures (Fig. 4/5/6). FloodNet masks are derived from this split and are valid only here."
+  },
+  "q_peak": {
+    "e1971_his": 11368.423828125,
+    "e1971_real_slmax_1in10": 7987.158203125,
+    "e1971_real_slmax_1in100": 16653.791015625,
+    "e1971_real_slmax_1in2": 3246.822998046875,
+    "e1971_real_slmax_1in20": 10308.0302734375,
+    "e1971_real_slmax_1in200": 19837.99609375,
+    "e1971_real_slmin_1in100": 16653.791015625,
+    "e2010_his": 9645.9892578125,
+    "e2010_real_slmax_1in10": 6216.83642578125,
+    "e2010_real_slmax_1in100": 12962.544921875,
+    "e2010_real_slmax_1in20": 8023.296875,
+    "e2010_real_slmax_1in200": 15440.9833984375,
+    "e2010_real_slmax_1in5": 4563.85302734375,
+    "e2010_real_slmin_1in50": 10670.7666015625,
+    "e2013_his": 17209.0234375,
+    "e2013_real_slmax_1in10": 6205.4501953125,
+    "e2013_real_slmax_1in100": 12938.8037109375,
+    "e2013_real_slmax_1in50": 10651.22265625,
+    "e2013_real_slmin_1in100": 12938.8037109375,
+    "edesign_real_slmax_1in10": 239.78111267089844,
+    "edesign_real_slmax_1in100": 499.9606018066406
+  },
+  "base_event_groups": {
+    "e1971": [
+      "e1971_his",
+      "e1971_real_slmax_1in10",
+      "e1971_real_slmax_1in100",
+      "e1971_real_slmax_1in2",
+      "e1971_real_slmax_1in20",
+      "e1971_real_slmax_1in200",
+      "e1971_real_slmin_1in100"
+    ],
+    "e2010": [
+      "e2010_his",
+      "e2010_real_slmax_1in10",
+      "e2010_real_slmax_1in100",
+      "e2010_real_slmax_1in20",
+      "e2010_real_slmax_1in200",
+      "e2010_real_slmax_1in5",
+      "e2010_real_slmin_1in50"
+    ],
+    "e2013": [
+      "e2013_his",
+      "e2013_real_slmax_1in10",
+      "e2013_real_slmax_1in100",
+      "e2013_real_slmax_1in50",
+      "e2013_real_slmin_1in100"
+    ],
+    "edesign": [
+      "edesign_real_slmax_1in10",
+      "edesign_real_slmax_1in100"
+    ]
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "site": "carlisle",
+  "created": "2026-07-14T14:18:12",
+  "n_events": 9,
+  "all_events": [
+    "run_02",
+    "run_03",
+    "run_04",
+    "run_05",
+    "run_06",
+    "run_07",
+    "run_09",
+    "run_2005",
+    "run_2015"
+  ],
+  "cross_validation": {
+    "scheme": "leave-one-out",
+    "n_folds": 9,
+    "rationale": "Leave-one-out cross-validation: each of the nine flood events is held out in turn. All events are tested exactly once.",
+    "folds": [
+      {
+        "fold": 1,
+        "test": [
+          "run_02"
+        ],
+        "train": [
+          "run_03",
+          "run_04",
+          "run_05",
+          "run_06",
+          "run_07",
+          "run_09",
+          "run_2005",
+          "run_2015"
+        ]
+      },
+      {
+        "fold": 2,
+        "test": [
+          "run_03"
+        ],
+        "train": [
+          "run_02",
+          "run_04",
+          "run_05",
+          "run_06",
+          "run_07",
+          "run_09",
+          "run_2005",
+          "run_2015"
+        ]
+      },
+      {
+        "fold": 3,
+        "test": [
+          "run_04"
+        ],
+        "train": [
+          "run_02",
+          "run_03",
+          "run_05",
+          "run_06",
+          "run_07",
+          "run_09",
+          "run_2005",
+          "run_2015"
+        ]
+      },
+      {
+        "fold": 4,
+        "test": [
+          "run_05"
+        ],
+        "train": [
+          "run_02",
+          "run_03",
+          "run_04",
+          "run_06",
+          "run_07",
+          "run_09",
+          "run_2005",
+          "run_2015"
+        ]
+      },
+      {
+        "fold": 5,
+        "test": [
+          "run_06"
+        ],
+        "train": [
+          "run_02",
+          "run_03",
+          "run_04",
+          "run_05",
+          "run_07",
+          "run_09",
+          "run_2005",
+          "run_2015"
+        ]
+      },
+      {
+        "fold": 6,
+        "test": [
+          "run_07"
+        ],
+        "train": [
+          "run_02",
+          "run_03",
+          "run_04",
+          "run_05",
+          "run_06",
+          "run_09",
+          "run_2005",
+          "run_2015"
+        ]
+      },
+      {
+        "fold": 7,
+        "test": [
+          "run_09"
+        ],
+        "train": [
+          "run_02",
+          "run_03",
+          "run_04",
+          "run_05",
+          "run_06",
+          "run_07",
+          "run_2005",
+          "run_2015"
+        ]
+      },
+      {
+        "fold": 8,
+        "test": [
+          "run_2005"
+        ],
+        "train": [
+          "run_02",
+          "run_03",
+          "run_04",
+          "run_05",
+          "run_06",
+          "run_07",
+          "run_09",
+          "run_2015"
+        ]
+      },
+      {
+        "fold": 9,
+        "test": [
+          "run_2015"
+        ],
+        "train": [
+          "run_02",
+          "run_03",
+          "run_04",
+          "run_05",
+          "run_06",
+          "run_07",
+          "run_09",
+          "run_2005"
+        ]
+      }
+    ],
+    "usage": "Table 1 — event-level robustness of FULL / Pre-Exp / Post-Exp (addresses reviewer R1-2). Terrain-stratified placement, N = 50.",
+    "placement_note": "Only Terrain-stratified (N=50) is used in cross-validation. Terrain depends solely on the DEM and the river centreline, so the same mask applies to every fold - no leakage. FloodNet MUST NOT be used in CV: its inundation-frequency map is derived from the FIXED training split, so a fold's test event would already have informed the placement.",
+    "normalisation_note": "🔴 Feature scaling MUST be recomputed inside each fold, from that fold's training events only. Bundaberg must be loaded from h5_data/ (raw, physical units): h5_normalized/ was clipped to [0,1] against the FIXED training split and cannot be inverted for other folds."
+  },
+  "fixed_split": {
+    "train": [
+      "run_02",
+      "run_03",
+      "run_04",
+      "run_05",
+      "run_06",
+      "run_07",
+      "run_09"
+    ],
+    "test": [
+      "run_2005",
+      "run_2015"
+    ],
+    "usage": "Fig. 7 (density x placement), robustness experiments, and the mechanism figures (Fig. 4/5/6). FloodNet masks are derived from this split and are valid only here."
+  },
+  "q_peak": {
+    "run_02": 647.0095358476101,
+    "run_03": 2192.414953057567,
+    "run_04": 1000.4232022427459,
+    "run_05": 1954.7085765337106,
+    "run_06": 752.3132723122981,
+    "run_07": 1101.6866410207003,
+    "run_09": 2164.1510052500234,
+    "run_2005": 1504.5871724545432,
+    "run_2015": 1605.3974437555298
+  }
+}
